@@ -1,0 +1,38 @@
+# Solymarket Backend Environment Configuration
+# Copy this file to .env and fill in your values
+
+# Server Configuration
+NODE_ENV=development
+PORT=3001
+FRONTEND_URL=http://localhost:3000
+
+# Database Configuration (Render PostgreSQL)
+DATABASE_URL=postgresql://username:password@hostname:port/database_name
+# Example: DATABASE_URL=postgresql://solymarket_user:your_password@dpg-xxxxx-a.oregon-postgres.render.com:5432/solymarket_db
+
+# Cloudinary Configuration (for image uploads)
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+
+# Solana Configuration
+SOLANA_RPC_URL=https://api.devnet.solana.com
+SOLANA_PROGRAM_ID=your_program_id_here
+TREASURY_WALLET=3SgkeKqYFhJy7YA2yVdaJEcZxtHqX68DesouKH4A6evm
+
+# Security
+JWT_SECRET=your_super_secret_jwt_key_here
+PLATFORM_FEE=0.025
+
+# API Keys (optional)
+COINGECKO_API_KEY=your_coingecko_key
+SOLANA_BEACH_API_KEY=your_solana_beach_key
+
+# Development settings
+LOG_LEVEL=debug
+ENABLE_CORS=true
+
+# Production settings (for deployment)
+# NODE_ENV=production
+# DATABASE_SSL=true
+# FRONTEND_URL=https://your-domain.com
